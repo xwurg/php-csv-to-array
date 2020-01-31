@@ -1,7 +1,7 @@
 <?php
 
 $filename = "spreadsheet.csv";
-$csvArray = csvtoarray($filename, ";", true);
+$csvarray = csvtoarray($filename, ";", true);
     
 /* 
 
@@ -75,8 +75,6 @@ function csvtoarray($filename, $separator = ",", $hasheaders = false)
         }
         fclose($handle);
     }
-    
-    print_r($results);
     
     return $results;
 }
